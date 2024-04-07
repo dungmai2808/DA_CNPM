@@ -16,7 +16,6 @@ class TeleopNode(Node):
 
     def listener_callback(self, msg):
         data = json.loads(msg.data)  # Parse JSON string into a Python dictionary
-        print(data)
         twist = Twist()
 
         # Extract the velocity components from the JSON data
